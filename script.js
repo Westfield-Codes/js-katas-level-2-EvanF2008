@@ -1,17 +1,21 @@
 /* Variable and Alert Katas */
 // These katas do not involve functions and are very basic. 
 
-/* COLOR KATAS */
-
-/* Var Alert */
-// make a string variable for a color, set it equal to your favorite
-// alert the message" "My favorite color is " plus the color
+/* PET KATAS */
 
 /* Var Alert Prompt */
-// make a string variable for color, prompt the user for their favorite
-// alert color " is a nice color!"
+// make a variable for pet type, prompt user for it 
+var pet_type = prompt("what pets do you have?");
+// make a variable for pet name, prompt user for it
+var pet_name = prompt("Whats the name of your pet(s)"); 
+// alert "You have a pet type named pet name 
+alert("You have a" +pet_type+ "named" +pet_name);
 
-/* Var Alert Prompt Conditional */
-// make a variable for color, prompt the user for their favorite
-// if user enters "black" alert "Black is not really a color." 
-// otherwise alert color " is a nice color!"
+/* Var Alert Prompt Conditionals */
+// make a variable for pet type, prompt user for it 
+// make a variable for pet name, prompt user for it
+// alert "You have a pet type named pet name 
+// if pet is a dog, say "I like dogs, too!"
+// if it is a cat, say "I'm allergic to cats"
+// If it is not a dog or a cat, say "what an interesting pet!"
+
