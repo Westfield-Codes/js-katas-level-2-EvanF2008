@@ -2,7 +2,7 @@
 // These katas do not involve functions and are very basic. 
 
 /* Var, Alert, Prompt, Function */
-
+main(); 
 /* FUNCTION main() 
 
  * Facebook wants to check if you're 13, so they ask your birth year 
@@ -15,6 +15,24 @@
 function main(){
     let age = prompt("insert age");
     let born = prompt(" insert birth year");
-    
+    if (myAge(age) == born) alert("welcome"); 
+    else alert("underage");
+}
+
+
+/* FUNCTION myAge(age)
+ * define a function called myAge with number parameter age
+ * Get thisYear using the date function https://www.w3schools.com/js/js_date_methods.asp
+ * set birthYear as thisYear minus age and return that
+ * @param: age (integer)
+ * @return: birthyear (year)
+*/
+ function myAge(age){
+    let today = new Date(); 
+    let thisYear =  today.getFullYear();
+    let birthyear = thisYear - age;
+    return birthyear; 
+
+ }
 
 

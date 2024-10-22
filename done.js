@@ -1,43 +1,9 @@
-/* Var, Prompt and Alert Katas */
+function myAge(age){
+    let today = new Date(); 
+    let thisYear =  today.getFullYear();
+    let birthyear = thisYear - age;
+    return birthyear; 
 
-/* COLOR KATAS */
+ }
 
-/* No Prompt */
-
-
-/* Prompt */
-
-/* Prompt with Conditional */
-
-
-/* AGE */
-
-/* No Prompt */
-
-
-/* Prompt */
-
-
-/* Prompt with Conditional */
-
-
-/* ICE CREAM */
-
-/* No Prompt */
-
-
-/* Prompt */
-
-
-/* Prompt with Conditional */
-
-
-/* PET */
-
-/* No Prompt */
-
-
-/* Prompt */
-
-
-/* Prompt with Conditional */
+ 
