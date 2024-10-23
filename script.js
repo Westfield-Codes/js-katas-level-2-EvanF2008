@@ -1,38 +1,33 @@
-/* Variable and Alert Katas */
-// These katas do not involve functions and are very basic. 
-
-/* Var, Alert, Prompt, Function */
-main(); 
-/* FUNCTION main() 
-
- * Facebook wants to check if you're 13, so they ask your birth year 
- * set age = "How old are you?"
- * then set born = asking "What year were you born?"
- * If myAge(age) is not equal to born, say, "Underaged", otherwise "Welcome!"
+main();
+/* FUNCTION main()  
+ * Ask for the name of a dog (dogName)
+ * Ask how many cups of food they get each meal (cups)
+ * call feedDog with parameters dogName, cups
  * @param: none (main never gets params)
  * @return: none (main never gets returns
  */
 function main(){
-    let age = prompt("insert age");
-    let born = prompt(" insert birth year");
-    if (myAge(age) == born) alert("welcome"); 
-    else alert("underage");
+    let dogName = prompt("what's the dogs name?");
+    let cups = prompt("how many cups is the portion??");
+    feedDog(dogName,cups);
+}
+/* FUNCTION feedDog(dogName, cups) */
+/* define a function called feedDog with string parameter dogName, number parameter cups
+ * loop from cup = 1 to cups.  For each cup, display "Here's a cup of kibble, [dogName]!"
+ * @param: dogName (string), cups (integer)
+ * @return: none
+ */ 
+function feedDog(dogName, cups){
+    for (let i = 0; i < cups; i ++ )
+{ 
+alert(i + " cups of kibble for " + dogName);
+}
 }
 
 
-/* FUNCTION myAge(age)
- * define a function called myAge with number parameter age
- * Get thisYear using the date function https://www.w3schools.com/js/js_date_methods.asp
- * set birthYear as thisYear minus age and return that
- * @param: age (integer)
- * @return: birthyear (year)
-*/
- function myAge(age){
-    let today = new Date(); 
-    let thisYear =  today.getFullYear();
-    let birthyear = thisYear - age;
-    return birthyear; 
 
- }
+
+
+
 
 
