@@ -1,17 +1,33 @@
-/* Variable and Alert Katas */
-// These katas do not involve functions and are very basic. 
+main();
+/* FUNCTION main()  
+ * Ask for the name of a dog (dogName)
+ * Ask how many cups of food they get each meal (cups)
+ * call feedDog with parameters dogName, cups
+ * @param: none (main never gets params)
+ * @return: none (main never gets returns
+ */
+function main(){
+    let dogName = prompt("what's the dogs name?");
+    let cups = prompt("how many cups is the portion??");
+    feedDog(dogName,cups);
+}
+/* FUNCTION feedDog(dogName, cups) */
+/* define a function called feedDog with string parameter dogName, number parameter cups
+ * loop from cup = 1 to cups.  For each cup, display "Here's a cup of kibble, [dogName]!"
+ * @param: dogName (string), cups (integer)
+ * @return: none
+ */ 
+function feedDog(dogName, cups){
+    for (let i = 0; i < cups; i ++ )
+{ 
+alert(i + " cups of kibble for " + dogName);
+}
+}
 
-/* COLOR KATAS */
 
-/* Var Alert */
-// make a string variable for a color, set it equal to your favorite
-// alert the message" "My favorite color is " plus the color
 
-/* Var Alert Prompt */
-// make a string variable for color, prompt the user for their favorite
-// alert color " is a nice color!"
 
-/* Var Alert Prompt Conditional */
-// make a variable for color, prompt the user for their favorite
-// if user enters "black" alert "Black is not really a color." 
-// otherwise alert color " is a nice color!"
+
+
+
+
